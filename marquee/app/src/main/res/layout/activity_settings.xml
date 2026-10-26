@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/bg" android:paddingStart="64dp" android:paddingTop="48dp" android:paddingEnd="64dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_title"
+        android:textSize="26sp" android:fontFamily="@font/poppins_medium" android:textColor="@color/text" />
+    <LinearLayout android:id="@+id/items" android:layout_width="420dp" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:orientation="vertical" />
+    <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:lineSpacingMultiplier="1.4" android:textSize="13sp"
+        android:textColor="@color/text_3" />
+    <TextView android:layout_width="520dp" android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="@string/tmdb_notice" android:textSize="11sp" android:textColor="@color/text_3" />
+</LinearLayout>

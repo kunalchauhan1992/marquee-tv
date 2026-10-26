@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="102dp" android:layout_height="150dp" android:layout_marginEnd="6dp" android:padding="3dp"
+    android:foreground="@drawable/tile_focus" android:focusable="true" android:clickable="true"
+    android:stateListAnimator="@animator/lift">
+    <FrameLayout android:id="@+id/card" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/tile_bg">
+        <TextView android:id="@+id/posterFallback" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center" android:padding="8dp" android:textSize="11sp" android:textColor="@color/text_3"
+            android:maxLines="4" android:ellipsize="end" />
+        <ImageView android:id="@+id/posterImage" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    </FrameLayout>
+</FrameLayout>

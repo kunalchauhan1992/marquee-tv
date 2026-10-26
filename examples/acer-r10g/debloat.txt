@@ -1,0 +1,64 @@
+# Acer AR50QDXGU2875AT 50" QLED Google TV (MOKA R10G board, Realtek RT2875P, about 2 GB RAM), India
+# Android 14 / SDK 34, build UKR1.260612.001. Tested on two sets of the same model, October 2026.
+#
+# Everything here is DISABLED for user 0 (pm disable-user), never uninstalled.
+# Apply:  .\scripts\apply-debloat.ps1 -TvHost <tv ip> -List examples\acer-r10g\debloat.txt
+#         (runs cleanyourtv's tools\disable.ps1 with its safety checks, then restricts reenabled-at-boot.txt)
+# Undo:   .\scripts\restore.ps1 -TvHost <tv ip> -List examples\acer-r10g\debloat.txt
+#
+# [boot] = Acer's firmware enables it again at every cold boot (a factory check you can't change without root).
+# Those also go in reenabled-at-boot.txt: apply-debloat.ps1 blocks them from running in the background, which
+# does survive a reboot, and Marquee hides them from its Apps page.
+#
+# Kept on purpose (do NOT add these):
+#   com.google.android.apps.tv.launcherx      stock Home; Marquee takes the Home button with an accessibility service
+#   com.google.android.tungsten.setupwraith   owns the saved Wi-Fi network on this platform: disabling it drops Wi-Fi + ADB
+#   com.realtek.tv, .tv.passthrough, .dtv, .tv.atv, .dtmb, .tv.isdb, .tv.atsc   HDMI inputs and tuner (TV input services)
+#   com.apps.mk.sk, com.apps.fivekey, com.apps.virtualkey, com.realtek.globalkeyhandler, com.apps.bluetoothremote   remote keys
+#   com.apps.ota, com.apps.authota, com.realsil.ota   firmware updates
+#   com.apps.tvmanager                        "TV Manager" (the owner uses it)
+#   Play Store, Play Services, Gboard, Assistant (katniss), Chromecast (mediashell), Android ad services
+#   com.apps.factory.ui                       factory menu: never start it, never disable it
+#
+# Ask the owner first about the "choices" batch: casting receivers, YouTube Music, VLC, USB player.
+
+# Batch 1: telemetry, remote management, ads
+com.viso.mdm                                 # Viso MDM agent: anti-theft, app-usage tracking, geofence, Firebase push (not enrolled)
+com.usc.scmanager.moka                       # Viso/USC companion service (boot and connectivity receivers)
+com.apps.function.gdpr                       # data-consent agent  [boot]
+com.google.android.feedback                  # [boot]
+com.android.tv.feedbackconsent
+com.google.android.partnersetup              # Google partner setup / RLZ pings  [boot]
+android.autoinstalls.config.google.gtvpai    # Play partner auto-installs
+
+# Batch 2: OEM demo, signage and background apps
+com.apps.esticker3                           # demo sticker overlay (ShowService)  [boot]
+com.mk.tv.meeting.service                    # digital-signage service  [boot] (persistent system app: still runs, ~55 MB)
+com.apps.biz.ds                              # DigitalSignage app ("M Sign")  [boot]
+com.seraphic.media.tv.interactive.app        # HbbTV interactive overlay (not used in India)
+
+# Batch 3: not needed on a TV
+com.apps.wifihotspot                         # TV as a Wi-Fi hotspot
+com.apps.function.audiolink                  # Bluetooth audio-link app  [boot]
+com.realtek.kara                             # karaoke
+com.realtek.karaoke.userguide
+com.android.healthconnect.controller
+com.android.health.connect.backuprestore
+com.google.android.play.games                # [boot]
+com.android.dreams.basic                     # basic "Colors" screensaver (Google's ambient mode stays)
+com.apps.mk.gameui                           # game-mode overlay
+com.google.android.syncadapters.calendar     # Calendar sync (nothing on a TV uses it)
+
+# Batch 4: the owner's choices
+com.google.android.youtube.tvmusic           # [boot]
+com.yablio.sendfilestotv                     # Send Files to TV
+com.realtek.airplay2                         # AirPlay receiver  [boot]
+com.creative.fastscreen.tv                   # FastCast Miracast receiver  [boot]
+com.apps.scast                               # SCast casting receiver  [boot]
+org.videolan.vlc                             # VLC
+com.apps.usbmediaplayer                      # USB photo/video player (no USB drives used)
+
+# Batch 5: leftover apps
+com.apps.biz.mt                              # Meeting Mode  [boot]
+com.mk.tv.gallery                            # Gallery and photo screensaver  [boot]
+com.mk.tv.caption                            # AI Caption  [boot]

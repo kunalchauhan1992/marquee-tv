@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF0B0B0E</color>
+    <color name="surface">#FF17171C</color>
+    <color name="surface_hi">#FF26262C</color>
+    <color name="accent">#FFFF2D5F</color>
+    <color name="text">#FFF4F4F6</color>
+    <color name="text_2">#FFC9C9D1</color>
+    <color name="text_3">#FF8A8A94</color>
+    <color name="online">#FF4CC38A</color>
+    <color name="warn">#FFF0A23A</color>
+</resources>

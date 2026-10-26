@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 16:9 launcher banner: the accent field with a white play mark. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape><solid android:color="#FF0B0B0E" /></shape></item>
+    <item android:left="96dp" android:right="96dp" android:top="36dp" android:bottom="36dp">
+        <shape android:shape="oval"><solid android:color="#FFFF2D5F" /></shape>
+    </item>
+    <item android:left="132dp" android:right="120dp" android:top="66dp" android:bottom="66dp" android:drawable="@drawable/ic_play" />
+</layer-list>

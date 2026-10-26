@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="430" rx="24" fill="#0e0e13"/>
+  <text x="40" y="54" fill="#fff" font-size="26" font-weight="600">The debloat, in five batches</text>
+  <text x="40" y="84" fill="#8b8b99" font-size="15">Disabled, never uninstalled. A screenshot after every batch. One command undoes it all.</text>
+
+  <g font-size="15">
+    <rect x="40" y="112" width="208" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="58" y="146" fill="#ff2e63" font-size="30" font-weight="600">7</text>
+    <text x="58" y="176" fill="#fff" font-weight="600">Telemetry, MDM</text>
+    <text x="58" y="200" fill="#8b8b99">Viso MDM, consent</text>
+    <text x="58" y="222" fill="#8b8b99">agent, partner pings</text>
+
+    <rect x="266" y="112" width="208" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="284" y="146" fill="#ff2e63" font-size="30" font-weight="600">4</text>
+    <text x="284" y="176" fill="#fff" font-weight="600">OEM demo, signage</text>
+    <text x="284" y="200" fill="#8b8b99">sticker overlay,</text>
+    <text x="284" y="222" fill="#8b8b99">M Sign, HbbTV</text>
+
+    <rect x="492" y="112" width="208" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="510" y="146" fill="#ff2e63" font-size="30" font-weight="600">10</text>
+    <text x="510" y="176" fill="#fff" font-weight="600">Not needed on a TV</text>
+    <text x="510" y="200" fill="#8b8b99">hotspot, karaoke,</text>
+    <text x="510" y="222" fill="#8b8b99">Health Connect, Games</text>
+
+    <rect x="718" y="112" width="208" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="736" y="146" fill="#ff2e63" font-size="30" font-weight="600">7</text>
+    <text x="736" y="176" fill="#fff" font-weight="600">Your choices</text>
+    <text x="736" y="200" fill="#8b8b99">casting receivers,</text>
+    <text x="736" y="222" fill="#8b8b99">YT Music, VLC, USB</text>
+
+    <rect x="944" y="112" width="216" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="962" y="146" fill="#ff2e63" font-size="30" font-weight="600">3</text>
+    <text x="962" y="176" fill="#fff" font-weight="600">Leftovers</text>
+    <text x="962" y="200" fill="#8b8b99">Meeting Mode,</text>
+    <text x="962" y="222" fill="#8b8b99">Gallery, AI Caption</text>
+  </g>
+
+  <rect x="40" y="290" width="550" height="110" rx="14" fill="#2a1420" stroke="#ff2e63"/>
+  <text x="62" y="322" fill="#fff" font-size="16" font-weight="600">15 come back at every cold boot</text>
+  <text x="62" y="348" fill="#e4a3b6" font-size="14">Acer's firmware re-enables them. They're blocked from</text>
+  <text x="62" y="370" fill="#e4a3b6" font-size="14">running in the background instead (that survives reboots)</text>
+  <text x="62" y="390" fill="#e4a3b6" font-size="14">and Marquee hides them.</text>
+
+  <rect x="610" y="290" width="550" height="110" rx="14" fill="#13201a" stroke="#2fbf71"/>
+  <text x="632" y="322" fill="#fff" font-size="16" font-weight="600">Kept: everything the TV needs</text>
+  <text x="632" y="348" fill="#a3e4c0" font-size="14">HDMI and tuner, remote keys, Wi-Fi owner (setupwraith),</text>
+  <text x="632" y="370" fill="#a3e4c0" font-size="14">Play Store, Assistant, Chromecast, firmware updates,</text>
+  <text x="632" y="390" fill="#a3e4c0" font-size="14">TV Manager. Factory menu never touched.</text>
+</svg>

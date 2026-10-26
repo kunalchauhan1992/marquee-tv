@@ -1,0 +1,15 @@
+# API keys: never commit
+keys/*
+!keys/README.md
+
+# Build output
+marquee/.gradle/
+marquee/build/
+marquee/app/build/
+marquee/local.properties
+*.apk
+
+# Your TV's backups, screenshots and notes
+backup/
+shots/
+*.log

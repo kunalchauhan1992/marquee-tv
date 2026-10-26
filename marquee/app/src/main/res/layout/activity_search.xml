@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/bg" android:paddingStart="48dp" android:paddingEnd="48dp" android:paddingTop="36dp"
+    android:clipChildren="false" android:clipToPadding="false">
+    <EditText android:id="@+id/query" android:layout_width="match_parent" android:layout_height="48dp"
+        android:hint="@string/search_hint" android:textColorHint="@color/text_3" android:textColor="@color/text"
+        android:textSize="18sp" android:inputType="text" android:imeOptions="actionSearch" android:singleLine="true"
+        android:paddingStart="16dp" android:paddingEnd="16dp" android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="12dp" android:background="@drawable/btn_bg" />
+    <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:textSize="13sp" android:textColor="@color/text_3" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/results" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="8dp" android:paddingTop="8dp"
+        android:clipToPadding="false" android:clipChildren="false" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8b8b99"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="470" rx="24" fill="#0e0e13"/>
+  <text x="40" y="54" fill="#fff" font-size="26" font-weight="600">How "More like this" picks titles</text>
+  <text x="40" y="84" fill="#8b8b99" font-size="15">Example: Zakir Khan: Papa Yaar (Hindi stand-up special, on Netflix)</text>
+
+  <g font-size="15">
+    <rect x="40" y="116" width="250" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="60" y="146" fill="#ff2e63" font-weight="600">1  TMDB's picks</text>
+    <text x="60" y="174" fill="#d6d6de">recommendations and</text>
+    <text x="60" y="196" fill="#d6d6de">similar titles for this</text>
+    <text x="60" y="218" fill="#d6d6de">exact title</text>
+
+    <rect x="320" y="116" width="250" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="340" y="146" fill="#ff2e63" font-weight="600">2  Same keywords</text>
+    <text x="340" y="174" fill="#d6d6de">"stand-up specials",</text>
+    <text x="340" y="196" fill="#d6d6de">"horror comedy universe"</text>
+    <text x="340" y="218" fill="#d6d6de">… and its main genre</text>
+
+    <rect x="600" y="116" width="250" height="150" rx="14" fill="#1b1b23" stroke="#33333f"/>
+    <text x="620" y="146" fill="#ff2e63" font-weight="600">3  Same leads</text>
+    <text x="620" y="174" fill="#d6d6de">other films with its two</text>
+    <text x="620" y="196" fill="#d6d6de">lead performers</text>
+    <text x="620" y="218" fill="#d6d6de">(Zakir Khan's specials)</text>
+
+    <rect x="880" y="116" width="280" height="150" rx="14" fill="#15151c" stroke="#33333f" stroke-dasharray="6 5"/>
+    <text x="900" y="146" fill="#8b8b99" font-weight="600">4  Only if fewer than 8</text>
+    <text x="900" y="174" fill="#8b8b99">popular titles in the</text>
+    <text x="900" y="196" fill="#8b8b99">same genres, up to 12</text>
+  </g>
+
+  <rect x="40" y="300" width="1120" height="70" rx="14" fill="#2a1420" stroke="#ff2e63"/>
+  <text x="64" y="330" fill="#fff" font-size="16" font-weight="600">Every title must be: same original language · streaming in India on one of your apps · not a cartoon (unless this one is)</text>
+  <text x="64" y="354" fill="#e4a3b6" font-size="15">Order: on the same app as this title first, then your other apps. Regional-language titles never appear.</text>
+
+  <g font-size="14" fill="#d6d6de">
+    <text x="40" y="410" fill="#8b8b99">Result</text>
+    <text x="40" y="436">Nishant Tanwar · Biswa: Sushi · Zakir Khan: Delulu Express · Bassi: Bas Kar Bassi · Biswa: Mood Kharaab · Zakir Khan: Mannpasand, Kaksha Gyarvi, Haq Se Single</text>
+  </g>
+  <text x="1160" y="458" fill="#55556a" font-size="12" text-anchor="end">Before: Toy Story 5, Moana, Trolls, Deadpool &amp; Wolverine, Super Mario Bros.</text>
+</svg>
